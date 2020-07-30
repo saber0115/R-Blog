@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    content-type: text/html
+    enabled: true
+    encoding: UTF-8
+
+comment.avatar: /images/avatar.png
+
+#QQ登录后指定用户为管理员的依据，用来识别博主是谁
+admin.openid: F9F8E0C1E23D67668EFEF7A34B510F66
+
+cookie.time: 864000 #设置cookie的生命周期为十天，单位秒。 60*60*24*10
+
+upload.path: F:\Projects\blog\src\main\resources\static\images\firstPicture
+picture.path: /images/firstPicture
+
+

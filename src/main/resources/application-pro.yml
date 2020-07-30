@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  session:
+    timeout: 864000 #session自动过期时间为10天，单位秒 60*60*24*10；记录登录状态
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: shujukumima888.
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+
+#日志配置
+logging:
+  level:
+    root: warn
+    com.xr: info
+  file: log/blog-pro.log
+
+
